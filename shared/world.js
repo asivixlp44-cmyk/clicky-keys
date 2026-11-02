@@ -45,7 +45,8 @@ export function boardAt(x, z) {
 // the island's other things
 export const workshop = { x: -44, z: -2, r: 11 };
 export const worldsPortal = { x: 96, z: 0, r: 8 };
-export const boards = [{ x: -16, z: 88 }, { x: 16, z: 88 }];
+// (the leaderboards: either side, clear of the camera behind someone at the spawn)
+export const boards = [{ x: -44, z: 88 }, { x: 44, z: 88 }];
 // a bridge's near end, and its far end (k from 1); the island after it
 export const spanStart = (k) => W.island.z0 - (k - 1) * W.period;
 export const spanEnd = (k) => spanStart(k) - W.spanLen;
